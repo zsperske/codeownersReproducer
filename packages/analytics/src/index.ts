@@ -3,10 +3,10 @@
 /*
  * OWNERSHIP STATUS:
  *
- * codeowners library reports: @analytics-team (correct - specific pattern)
- * GitHub actually assigns:     @analytics-team (correct)
+ * codeowners library reports: @zsperske (correct - specific pattern)
+ * GitHub actually assigns:     @zsperske (correct)
  *
- * Pattern: /packages/analytics @analytics-team
+ * Pattern: /packages/analytics @zsperske
  *
  * This directory has a specific ownership pattern that covers all descendants,
  * so both the library and GitHub handle it correctly.

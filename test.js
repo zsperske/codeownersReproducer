@@ -10,13 +10,13 @@ const tests = [
   { path: 'packages/other/src/file.js', expected: false, reason: 'nested file' },
 ];
 
-console.log('Pattern: /packages/* @packages-team\n');
+console.log('Pattern: /packages/* @zsperske\n');
 
 let failed = 0;
 
 tests.forEach(test => {
   const owners = codeowners.getOwner(test.path);
-  const matches = owners && owners.includes('@packages-team');
+  const matches = owners && owners.includes('@zsperske');
   const pass = matches === test.expected;
   
   console.log(`${pass ? '✅' : '❌'} ${test.path}`);

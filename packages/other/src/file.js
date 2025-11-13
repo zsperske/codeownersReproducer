@@ -3,10 +3,10 @@
 /*
  * OWNERSHIP DISCREPANCY:
  *
- * codeowners library reports: @packages-team (INCORRECT - treats /* as recursive)
+ * codeowners library reports: @zsperske (INCORRECT - treats /* as recursive)
  * GitHub actually assigns:     (no owner - not a direct child of /packages)
  *
- * Pattern: /packages/* @packages-team
+ * Pattern: /packages/* @zsperske
  * This file is at: packages/other/src/file.js (3 levels deep from /packages)
  *
  * The /* pattern should only match packages/other itself, NOT nested files.

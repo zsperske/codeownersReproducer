@@ -12,7 +12,7 @@ This repo has a `demonstrate-bug` branch that modifies files the library incorre
 - `packages/other/README.md`
 - `packages/other/src/file.js`
 
-**Library reports:** `@packages-team` owns these files  
+**Library reports:** `@zsperske` owns these files  
 **GitHub PR shows:** No reviewer assigned (correct behavior)
 
 ### To reproduce locally
@@ -31,7 +31,7 @@ npm test
 
 **CODEOWNERS file:**
 ```
-/packages/* @packages-team
+/packages/* @zsperske
 ```
 
 **Test results:**
