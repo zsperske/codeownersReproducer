@@ -6,23 +6,34 @@ The `codeowners` library treats `/*` patterns as recursive (like `/**`), but acc
 
 ## Reproduction
 
-This repo has a `demonstrate-bug` branch that modifies files the library incorrectly reports as owned. Create a PR from that branch to see that GitHub does NOT assign the owners the library claims.
+This repo has a `demonstrate-bug` branch that modifies files to show the difference between correct and incorrect ownership matching.
+
+See the PR for the issue in action, note the lock icon on the files page - https://github.com/zsperske/codeownersReproducer/pull/1/files
 
 **Files modified in `demonstrate-bug` branch:**
-- `packages/other/README.md`
-- `packages/other/src/file.js`
 
-**Library reports:** `@zsperske` owns these files  
-**GitHub PR shows:** No reviewer assigned (correct behavior)
+✅ `packages/analytics/src/index.ts` - Correctly owned (pattern: `/packages/analytics @zsperske`)
+- Library reports: `@zsperske` 
+- GitHub assigns: `@zsperske` ✓
 
-### To reproduce locally
+❌ `packages/other/README.md` - Incorrectly reported as owned (pattern: `/packages/* @zsperske`)
+❌ `packages/other/src/file.js` - Incorrectly reported as owned
+- Library reports: `@zsperske`
+- GitHub assigns: (no owner) ✓
 
-1. Install dependencies:
+### Locally (run the test)
+
+1. Clone and checkout main branch:
+```bash
+git checkout main
+```
+
+2. Install dependencies:
 ```bash
 npm install
 ```
 
-2. Run the test:
+3. Run the test:
 ```bash
 npm test
 ```
