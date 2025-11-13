@@ -11,3 +11,13 @@
   
   The /* pattern should only match packages/other itself, NOT files inside it.
 -->
+
+## Features
+
+- Feature A: Data processing
+- Feature B: Analytics integration
+- Feature C: Export functionality
+
+## Usage
+
+See the main documentation for usage examples.
