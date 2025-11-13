@@ -14,5 +14,11 @@
 
 module.exports = {
   name: 'other-package',
-  version: '1.0.0'
+  version: '1.0.0',
+  
+  // Added in demonstrate-bug branch
+  processData(data) {
+    console.log('Processing:', data);
+    return data;
+  }
 };
