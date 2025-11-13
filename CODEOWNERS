@@ -1,0 +1,11 @@
+# Test CODEOWNERS file to reproduce /* pattern bug
+
+# Root level pattern - should only match direct children
+/* @root-team
+
+# Nested level pattern - should only match direct children of /packages
+/packages/* @packages-team
+
+# Specific directory pattern
+/packages/analytics @analytics-team
+

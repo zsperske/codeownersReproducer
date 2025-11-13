@@ -1,0 +1,13 @@
+{
+  "name": "codeowners-reproducer",
+  "version": "1.0.0",
+  "description": "Reproducer for /* pattern bug in codeowners library",
+  "main": "test.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "codeowners": "^5.1.1"
+  }
+}
+
