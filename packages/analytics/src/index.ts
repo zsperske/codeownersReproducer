@@ -14,9 +14,14 @@
 
 export default {
   name: 'analytics',
-  version: '1.0.0',
+  version: '1.1.0',  // Updated version
   
   track(event: string, data?: Record<string, any>) {
     console.log('Tracking:', event, data);
+  },
+  
+  // New method added in demonstrate-bug branch
+  trackPageView(page: string) {
+    console.log('Page view:', page);
   }
 };
