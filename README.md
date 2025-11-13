@@ -6,6 +6,8 @@ The `codeowners` library treats `/*` patterns as recursive (like `/**`), but acc
 
 ## Reproduction
 
+### Option 1: Run the test
+
 1. Install dependencies:
 ```bash
 npm install
@@ -15,6 +17,17 @@ npm install
 ```bash
 npm test
 ```
+
+### Option 2: See it in action with a GitHub PR
+
+This repo has a `demonstrate-bug` branch that modifies files the library incorrectly reports as owned. Create a PR from that branch to see that GitHub does NOT assign the owners the library claims.
+
+**Files modified in `demonstrate-bug` branch:**
+- `packages/other/README.md`
+- `packages/other/src/file.js`
+
+**Library reports:** `@packages-team` owns these files  
+**GitHub PR shows:** No reviewer assigned (correct behavior)
 
 ## Expected vs Actual Behavior
 
